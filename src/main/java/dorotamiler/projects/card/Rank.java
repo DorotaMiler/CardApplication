@@ -1,4 +1,4 @@
-package dorotamiler.projects;
+package dorotamiler.projects.card;
 
 public enum Rank {
     ACE("Ace"),
