@@ -1,0 +1,16 @@
+main{
+    height: 90vh;
+    border: 2px solid black;
+    padding: 30px
+}
+
+footer {
+    border-top: 2px solid black;
+    margin-top: 2vh;
+    padding-top: 30px;
+}
+
+.button{
+    padding-top: 10px;
+    margin-left: 50vh;
+}
