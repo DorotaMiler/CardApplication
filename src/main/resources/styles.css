@@ -1,7 +1,25 @@
-main{
+@media only screen and (max-width: 500px) {
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        margin: 0;
+    }
+
+    a {
+        display: block;
+    }
+}
+
+main {
     height: 60vh;
     border: 2px solid black;
     padding: 30px
+}
+
+body {
+    margin: 0;
 }
 
 footer {
@@ -10,38 +28,66 @@ footer {
     padding-top: 30px;
 }
 
-.button{
+nav {
+    width: 95vw;
+    background-color: #D6EFFF;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 2vh;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+    font-family: monospace;
+}
+
+a:hover {
+    background-color: #C6E9FF;
+}
+
+.button {
     padding-top: 10px;
     margin-left: 50vh;
 }
 
-div::first-letter{
+div::first-letter {
     text-transform: uppercase;
 }
 
-h1:hover{
+h1:hover {
     transition: background-color 1s linear;
     background-color: limegreen;
 }
 
-h3:hover{
+h3:hover {
     transition: background-color 1s linear;
     background-color: greenyellow;
 }
 
-a:hover, p:hover{
+a:hover, p:hover {
     transition: background-color 1s linear;
     background-color: yellow;
 }
 
-.logo:hover{
+.logo:hover {
     opacity: 0.8;
     transition: opacity 0.1s ease-in-out;
     background-color: darkseagreen;
 }
 
 /* selected link */
-a:active{
+a:active {
     color: beige;
 }
 
