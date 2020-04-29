@@ -70,14 +70,20 @@ h1:hover {
     background-color: limegreen;
 }
 
+h2:hover {
+    transition: background-color 1s linear;
+    background-color: indianred;
+}
+
 h3:hover {
     transition: background-color 1s linear;
     background-color: greenyellow;
 }
 
 a:hover, p:hover {
+    opacity: 0.8;
     transition: background-color 1s linear;
-    background-color: yellow;
+    background-color: cornsilk;
 }
 
 .logo:hover {
