@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name=“description" content=“A simple app allowing display of chosen card
-    's rank and suit” />
-    <title>Card Application</title>
+    's rank and suit-contact information and form” />
+    <title>Card Application-contact</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
@@ -13,7 +13,7 @@
 <nav class="main-nav" role="navigation">
     <img class="logo"
          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfRiLssA5yu9fE2HQTzzda_aGX65IoDMuJM4ha775I5G2QlCo2&usqp=CAU">
-    |
+
     <div>
         <ul>
             <li>
@@ -23,7 +23,7 @@
                 <a href="aboutApp.html">About app</a>
             </li>
             <li>
-                <a href="aboutApp.html">Gallery</a>
+                <a href="CardGames.html">Kids fiendly card games</a>
             </li>
             <li>
                 <a href="contact.html">Contact</a>
@@ -34,48 +34,65 @@
 
 <form class="header-search" id="nav-main-search" action
 <header>
-    <h1>Card Application</h1>
-    <p>Simple application to <strong>display</strong> chosen card's rank - suit</p>
+    <h1>Contact us</h1>
+    <p>You can contact us directly or fill in the following contact form - we will get back to you</p>
 </header>
 <main>
 
-    <h2>Card examples</h2>
+
+<form action="/endpoint" method="post">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required />
+    </div>
+    <div>
+        <label for="last name">Last name: </label>
+        <input type="text" name="last name" id="last name" required />
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" required />
+    </div>
+    <div>
+        <label for="card game">Card game type: </label>
+        <select id="card game">
+            <option value="adult">aduld</option>
+            <option value="children3">children 3+ years old</option>
+            <option value="children6">children 6+ years old</option>
+            <option value="children11">children 11+ years old</option>
+        </select>
+    </div>
+    <div>
+        <label for="description">Message: </label>
+        <textarea name="description" id="description"></textarea>
+
+    </div>
+    <div>
+
+        <button type="submit">Send</button>
+    </div>
+</form>
 
     <section>
         <div>
-            <h3>Ranks</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cum distinctio dolorem eveniet quis soluta
-                tempore. Autem culpa, deserunt dolorem eligendi esse et eum
-                harum, hic id laboriosam laudantium, magni maiores nemo neque optio perferendis possimus
-                reiciendis reprehenderit tempora veniam vitae.
-            </p>
+            <a href="mailto:dorota.ludwicka@gmail.com">Mail</a>
+            <p>I check e-mail every hour - will get back to you soon
         </div>
     </section>
-
     <section>
         <div>
-            <h3>Suits</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cum distinctio dolorem eveniet quis soluta
-                tempore. Autem culpa, deserunt dolorem eligendi esse et eum
-                harum, hic id laboriosam laudantium, magni maiores nemo neque optio perferendis possimus
-                reiciendis reprehenderit tempora veniam vitae.
+            <a href="tel:123456789">Mobile</a>
+            <p>Do not hesitate to call during working hours 9.00-17.00
             </p>
         </div>
     </section>
     <section>
         <div>
-            <h3>Possible results</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Cum distinctio dolorem eveniet quis soluta
-                tempore. Autem culpa, deserunt dolorem eligendi esse et eum
-                harum, hic id laboriosam laudantium, magni maiores nemo neque optio perferendis possimus
-                reiciendis reprehenderit tempora veniam vitae.
+            <a href="https://link">Facebook</a>
+            <p>Let's connect!
             </p>
         </div>
     </section>
-
 </main>
 <div class="button">
     <button>go to Google</button>
