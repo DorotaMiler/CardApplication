@@ -1,0 +1,13 @@
+.form > label{
+    display:block;
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+input[type=text] {
+    border: 2px solid dodgerblue;
+    border-radius: 4px;
+}
