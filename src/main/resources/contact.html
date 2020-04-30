@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name=“description" content=“A simple app allowing display of chosen card
-    's rank and suit-contact information and form” />
+    <meta name=“description" content=“A simple app allowing display of chosen cards rank and suit-contact information and form” />
     <title>Card Application-contact</title>
-    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkooo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <link href="contact.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-<nav class="main-nav" role="navigation">
-    <img class="logo"
-         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfRiLssA5yu9fE2HQTzzda_aGX65IoDMuJM4ha775I5G2QlCo2&usqp=CAU">
-
-    <div>
-        <ul>
-            <li>
-                <a href="index.html">Home</a>
+<nav class="navbar navbar-dark bg-dark">
+    <a class="logo navbar-brand"
+         href="index.html">CardApp</a>
+    <div id="navigation">
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a class="navbar-link" href="index.html">Home</a>
             </li>
             <li>
                 <a href="aboutApp.html">About app</a>
@@ -31,30 +36,20 @@
         </ul>
     </div>
 </nav>
-
-<form class="header-search" id="nav-main-search" action
 <header>
     <h1>Contact us</h1>
     <p>You can contact us directly or fill in the following contact form - we will get back to you</p>
 </header>
 <main>
-
-
-    <form action="/endpoint" method="post">
+    <form class="form" action="/endpoint" method="post">
         <div class="form">
-            <label>Title: </label><br>
-            <label>
-                <input type="radio" name="title" value="mrs">
-                Mrs
-            </label>
-            <label>
-                <input type="radio" name="title" value="mr">
-                Mr
-            </label>
-            <label>
-                <input type="radio" name="title" value="miss">
-                Miss
-            </label>
+            <legend class="in">Title: </legend>
+                <input type="radio" id="mrs" name="title" value="mrs">
+                <label for="mrs">Mrs</label>
+                <input type="radio" id="mr" name="title" value="mr">
+                <label for="mr">Mr</label>
+                <input type="radio" id="miss" name="title" value="miss">
+                <label for="miss">Miss</label>
         </div>
         <div class="form">
             <label for="fname">First name: </label>
@@ -66,7 +61,7 @@
         </div>
         <div class="form">
             <label for="email">Email: </label>
-            <input type="email" name="email" id="email" required/>
+            <input type="email" name="email" id="email" required minlength="5"/>
         </div>
         <div class="form">
             <label for="phone">Phone number: </label>
@@ -83,14 +78,13 @@
         </div>
         <div class="form">
             <label for="description">Message: </label>
-            <textarea name="description" id="description"></textarea>
+            <textarea name="description" id="description" rows ="4"></textarea>
         </div>
         <div>
-
-            <button type="submit">Send</button>
+            <input type="submit" value="send">Send</input>
+            <button type="reset">Reset form</button>
         </div>
     </form>
-
     <section>
         <div>
             <a href="mailto:dorota.ludwicka@gmail.com">Mail</a>
@@ -114,7 +108,7 @@
 </main>
 <div class="button">
     <button>go to Google</button>
-    <a href="https://google.com" title="" Google for search>Google</a>
+    <a href="https://google.com" title="Google for search">Google</a>
 </div>
 <footer>
     <span>Dorota Miler-</span>

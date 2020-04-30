@@ -1,4 +1,12 @@
-@media only screen and (max-width: 500px) {
+@media screen and (min-width:  992px) {
+    .form input{
+        max-width: 80%;
+    }
+
+    .form textarea{
+        max-width: 90%;
+    }
+
     ul {
         flex-direction: column;
     }
@@ -14,7 +22,6 @@
 
 main {
     height: 60vh;
-    border: 2px solid black;
     padding: 30px
 }
 
@@ -75,11 +82,6 @@ h2:hover {
     background-color: indianred;
 }
 
-h3:hover {
-    transition: background-color 1s linear;
-    background-color: greenyellow;
-}
-
 a:hover, p:hover {
     opacity: 0.8;
     transition: background-color 1s linear;
@@ -89,15 +91,4 @@ a:hover, p:hover {
 .logo:hover {
     opacity: 0.8;
     transition: opacity 0.1s ease-in-out;
-    background-color: darkseagreen;
-}
-
-/* selected link */
-a:active {
-    color: beige;
-}
-
-/* visited link */
-a:visited {
-    color: green;
 }
