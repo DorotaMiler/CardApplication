@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name=“description" content=“A simple app allowing display of chosen cards rank and suit-contact information and form” />
+    <meta
+            name=“description"
+            content=“ simple app allowing display of chosen cards rank and suit-contact information and form”
+    />
     <title>Card Application-contact</title>
     <link
             rel="stylesheet"
@@ -11,109 +14,135 @@
             integrity="sha384-Vkooo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
             crossorigin="anonymous"
     />
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
-    <link href="contact.css" rel="stylesheet" type="text/css"/>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="form.css" rel="stylesheet" />
 </head>
 
 <body>
-<nav class="navbar navbar-dark bg-dark">
-    <a class="logo navbar-brand"
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand logo"
          href="index.html">CardApp</a>
-    <div id="navigation">
-        <ul class="navbar-nav">
-            <li class="navbar-item">
-                <a class="navbar-link" href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="aboutApp.html">About app</a>
-            </li>
-            <li>
-                <a href="CardGames.html">Kids fiendly card games</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
+        <div id="navigation">
+            <ul class="navbar-nav mr-auto">
+                <li class="navbar-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="aboutApp.html">About app</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="CardGames.html">Kids friendly card games</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
         </ul>
     </div>
 </nav>
-<header>
-    <h1>Contact us</h1>
-    <p>You can contact us directly or fill in the following contact form - we will get back to you</p>
-</header>
-<main>
-    <form class="form" action="/endpoint" method="post">
-        <div class="form">
-            <legend class="in">Title: </legend>
-                <input type="radio" id="mrs" name="title" value="mrs">
-                <label for="mrs">Mrs</label>
-                <input type="radio" id="mr" name="title" value="mr">
-                <label for="mr">Mr</label>
-                <input type="radio" id="miss" name="title" value="miss">
-                <label for="miss">Miss</label>
-        </div>
-        <div class="form">
-            <label for="fname">First name: </label>
-            <input type="text" name="fname" id="fname" required/>
-        </div>
-        <div class="form">
-            <label for="lname">Last name: </label>
-            <input type="text" name="lname" id="lname" required/>
-        </div>
-        <div class="form">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" required minlength="5"/>
-        </div>
-        <div class="form">
-            <label for="phone">Phone number: </label>
-            <input type="tel" name="phone" id="phone" required/>
-        </div>
-        <div class="form">
-            <label for="card game">Card game type: </label>
-            <select id="card game">
-                <option value="adult">aduld</option>
-                <option value="children3">children 3+ years old</option>
-                <option value="children6">children 6+ years old</option>
-                <option value="children11">children 11+ years old</option>
-            </select>
-        </div>
-        <div class="form">
-            <label for="description">Message: </label>
-            <textarea name="description" id="description" rows ="4"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="send">Send</input>
-            <button type="reset">Reset form</button>
-        </div>
-    </form>
-    <section>
-        <div>
-            <a href="mailto:dorota.ludwicka@gmail.com">Mail</a>
-            <p>I check e-mail every hour - will get back to you soon
-        </div>
-    </section>
-    <section>
-        <div>
-            <a href="tel:123456789">Mobile</a>
-            <p>Do not hesitate to call during working hours 9.00-17.00
+    <header class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Contact us:</h1>
+            <p>
+                You can contact us directly or fill in the following contact form - we will get back to you
             </p>
         </div>
-    </section>
-    <section>
-        <div>
-            <a href="https://link">Facebook</a>
-            <p>Let's connect!
-            </p>
-        </div>
-    </section>
-</main>
-<div class="button">
-    <button>go to Google</button>
-    <a href="https://google.com" title="Google for search">Google</a>
-</div>
-<footer>
-    <span>Dorota Miler-</span>
-    <span>©Copyright 2020 by me. All rights reversed.</span>
-</footer>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="display-5">Contact form</h3>
+                </div>
+            </div>
 
-</body>
+            <form action="action" method="post" class="contact-form">
+                <div class="row">
+                    <div class="form col-lg-6 col-sm-12">
+                        <label for="fname">First name: </label>
+                        <input type="text" name="fname" id="fname" required/>
+                    </div>
+                    <div class="form col-lg-6 col-sm-12">
+                        <label for="lname">Last name: </label>
+                        <input type="text" name="lname" id="lname" required/>
+                    </div>
+                    <div class="form col-lg-6 col-sm-12">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" required minlength="5"/>
+                    </div>
+                    <div class="form">
+                        <label for="phone">Phone number: </label>
+                        <input type="tel" name="phone" id="phone" required/>
+                    </div>
+                    <div class="form col-12">
+                        <label for="card game">Card game type: </label>
+                        <select id="card game">
+                            <option value="adult">aduld</option>
+                            <option value="children3">children 3+ years old</option>
+                            <option value="children6">children 6+ years old</option>
+                            <option value="children11">children 11+ years old</option>
+                        </select>
+                    </div>
+                    <div class="form col-12">
+                        <label for="description">Message: </label>
+                        <textarea name="description" id="description" rows ="4"></textarea>
+                    </div>
+                    <div class="form col-12">
+                        <button class="btn btn-primary" type="submit">
+                            Send
+                        </button>
+                        <button type="reset">
+                            Reset form
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <p>I check e-mail every hour - will get back to you soon
+                        </p>
+                                <a
+                                role="button"
+                                class="btn btn-secondary"
+                                href="mailto:someone@gmail.com">
+                                    Send e-mail
+                                </a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12">
+                        <p>Do not hesitate to call during working hours 9.00-17.00
+                        </p>
+                                <a
+                                role="button"
+                                class="btn btn-secondary"
+                                href="tel:111222333">
+                                    Call
+                                </a>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div>
+                    <div class="col-lg-4 col-sm-12">
+                        <p>Let's connect!
+                        </p>
+                                <a
+                                role="button"
+                                class="btn btn-secondary"
+                                href="https://link">
+                                    Facebook
+                                </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <span>Dorota Miler-</span>
+        <span>©Copyright 2020 by me. All rights reversed.</span>
+    </footer>
+    </body>
 </html>
