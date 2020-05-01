@@ -18,23 +18,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand logo"
-         href="index.html">CardApp</a>
-        <div id="navigation">
-            <ul class="navbar-nav mr-auto">
-                <li class="navbar-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="nav-link" href="aboutApp.html">About app</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="nav-link" href="CardGames.html">Kids friendly card games</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"> <!--collapsing navigation depending on devise width-->
+    <a class="navbar-brand logo" href="index.html">CardApp</a>
+    <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutApp.html">About app</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cardGames.html">Kids fiendly card games</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
         </ul>
     </div>
 </nav>
