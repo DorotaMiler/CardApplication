@@ -35,6 +35,10 @@ footer {
     text-transform: lowercase;
 }
 
+p.italic {
+    font-style: italic;
+}
+
 .logo::first-letter {
     text-transform: uppercase;
 }
